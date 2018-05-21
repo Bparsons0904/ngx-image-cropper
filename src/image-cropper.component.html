@@ -71,4 +71,5 @@
             (touchstart)="startMove($event, 'resize', 'left')"
         ></span>
     </div>
+    <button *ngIf="imageFinishedLoading" (click)="rotateImage()" mat-raised-button class="submit-button text-center rotate"><i class="fa fa-repeat"></i> Rotate Image</button>
 </div>
