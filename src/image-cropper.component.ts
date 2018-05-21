@@ -90,6 +90,7 @@ export class ImageCropperComponent implements OnChanges {
     }
 
     private initCropper() {
+        this.imageFinishedLoading = false;
         this.imageVisible = false;
         this.originalImage = null;
         this.safeImgDataUrl = 'data:image/png;base64,iVBORw0KGg'
